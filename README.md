@@ -4,11 +4,17 @@ What does this thing actualy do? It can execute commands from files.
 There are not a lot of commands but enough for calculating some simple things! 
 # Features
 1.) Math
-  1.1) + - / * SQRT/SIN/COS
+
+1.1) + - / * SQRT/SIN/COS
+
 2.) Variables
-  2.1) SET / GET
+
+2.1) SET / GET
+
 3.) Comparison
-  3.1) Equals / Smaller / Bigger
+
+3.1) Equals / Smaller / Bigger
+
 4.) GOTO
 # Examples
 1.) Discriminant
