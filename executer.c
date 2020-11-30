@@ -8,26 +8,21 @@ float random(int max)
     int rnd = rand()%max;
     return rnd;
 }
-//=====œ≈–≈Ã≈ÕÕ€≈======//
 #define MAX_V 32
 float VARIABLES[MAX_V]={};
 float GET_VARBLE(int POS);
 void SET_VARBLE(unsigned char POS,float VALUE);
 void DUMP_VARIABLES();
-//=====œ≈–≈Ã≈ÕÕ€≈======//
 
-//====—“≈ ===//
 #define MAX_STACK 32
 float VSTACK[MAX_STACK]={};
 unsigned char STACK_POINTER=0;
 void ADD_TO_STACK(float VALUE);
 float GET_FROM_STACK();
 void DUMP_STACK();
-//====—“≈ ===//
 
 #define PROGNAME 0x02
 
-//======Ã¿“¿Õ=====//
 #define ADD 0x05
 #define SUB 0x06
 #define MUL 0x07
@@ -43,22 +38,17 @@ void DUMP_STACK();
 #define ATAN 0x11
 #define L_SHIFT 0x12
 #define R_SHIFT 0x13
-//======Ã¿“¿Õ=====//
 
-//====œ≈–≈Ã≈ÕÕ€≈===//
 #define SET_VALUE 0x14
 #define GET_VALUE 0x15
-//====œ≈–≈Ã≈ÕÕ€≈===//
 
 #define GOTO 0x16
 
-//===Œœ≈–¿÷»» —–¿¬Õ≈Õ»ﬂ===//
 #define __IF 0x17
 #define __FI 0x18
 #define EQ 0x19 
 #define SM 0x1A
 #define BG 0x1B
-//===Œœ≈–¿÷»» —–¿¬Õ≈Õ»ﬂ===//
 
 #define READ 0x1C
 #define PUSH 0x1D
@@ -72,7 +62,6 @@ void DUMP_STACK();
 #define SWAP 0x25
 #define POP 0x26
 
-//===œŒ–“€===//
 #define IPI 0x27
 #define OPI 0x28
 #define DWH 0x29
@@ -80,24 +69,20 @@ void DUMP_STACK();
 #define DRP 0x2B
 #define AWP 0x2C
 #define ARP 0x2D
-//===œŒ–“€===//
 
 #define RUN_PROG 0x2E 
 #define GET_RAND 0x2F 
 #define GO_TO_LABEL 0x30 
 
-//=====◊¿—€=====//
 #define LABEL_N 0xFA 
 #define END_PROG 0xFF
 #define END_WRITE 0xFE
-//====œ¿Ãﬂ“‹====//
 
 #define MAX_VRAM 512 
 unsigned char VRAM[MAX_VRAM]={};
 void CLEAR_VRAM(){for(int i=0;i<512;i++){VRAM[i]=0xFF;}} 
 unsigned char GET_FROM_VRAM(short int POS); 
 float VGET_VALUE();
-//====œ¿Ãﬂ“‹====//
 
 void VM();
 float ReadValue();
@@ -108,7 +93,6 @@ short int PROG_COUNTER=0;
 unsigned char STATUS=LOOP_EN;
 void InputFilename();
 
-//==========ƒÀﬂ ›Ã”Àﬂ÷»» œŒ–“Œ¬============//
 #define INPUT 0
 #define OUTPUT 1
 #define LOW 0
@@ -142,7 +126,6 @@ float digitalRead(int p)
         return 0;
     }
 }
-//==========ƒÀﬂ ›Ã”Àﬂ÷»» œŒ–“Œ¬============//
 
 void init()
 {
@@ -188,7 +171,7 @@ void LoadFromSDCard(char *Fname)
     }
     else
     {
-        printf("“‡ÍÓ„Ó Ù‡ÈÎ‡ ÌÂ ÒÛ˘ÂÒÚ‚ÛÂÚ.\nFile not founded!");
+        printf("File not founded!");
     }
 }
 
