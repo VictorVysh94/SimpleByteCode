@@ -18,9 +18,14 @@ There are not a lot of commands but enough for calculating some simple things!
 4.) GOTO
 # Examples
 1.) Discriminant
+
 2.) Fibonacci
+
 # How to use?
 1.) Open CMD
+
 2.) Write simple_byte_code.exe %FILENAME%
+
 3.) Press enter
+
 It can load files using first argument as pointer to file.
